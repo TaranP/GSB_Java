@@ -33,7 +33,11 @@ public class ConnexionMySql { // DAO = Data Access Object
 	 */
 	public static void connecterBd(){
 		//connexion à la base de donnée à partir de jdbc
+<<<<<<< HEAD
 		String url = "jdbc:mysql://localhost:3306/java_gsb"; // url : chaine de connexion
+=======
+		String url = "jdbc:mysql://localhost:3306/gsb_java"; // url : chaine de connexion
+>>>>>>> branch 'master' of https://github.com/TaranP/GSB_Java
 		// try permet d'essayer de lancer la connexion
 		try {Class.forName("com.mysql.jdbc.Driver"); 
 			cnx = DriverManager.getConnection(url,"root",""); 

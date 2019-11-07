@@ -1,29 +1,18 @@
-/*
- * Créé le 22 mars 2012
- *
- * TODO Pour changer le modèle de ce fichier généré, allez à :
- * Fenêtre - Préférences - Java - Style de code - Modèles de code
- */
 package gsb.vue;
-
-import gsb.modele.Medecin;
 
 import java.awt.Container;
 import java.awt.GridLayout;
-<<<<<<< HEAD
-import java.awt.event.ActionEvent;
-=======
->>>>>>> branch 'master' of https://github.com/TaranP/GSB_Java
 
 import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class JIFMedecin extends JInternalFrame  {
-	/**
-	 * Commentaire pour <code>serialVersionUID</code>
-	 */
+import gsb.modele.Medicament;
+
+public class JIFMedicament extends JInternalFrame {
+
+
 	private static final long serialVersionUID = 1L;
 	protected JPanel p;  
 	protected JPanel pTexte;
@@ -51,7 +40,7 @@ public class JIFMedecin extends JInternalFrame  {
     protected JTextField JTpotentiel;
     protected JTextField JTspecialite;
 	
-    public JIFMedecin() {
+    public JIFMedicament() {
     	p = new JPanel();  // panneau principal de la fenêtre
         pBoutons = new JPanel();    // panneau supportant les boutons
         pTexte = new JPanel(new GridLayout(9,2));
@@ -105,17 +94,15 @@ public class JIFMedecin extends JInternalFrame  {
 
 	}
     
-    public void remplirText(Medecin unMedecin) 	
+    public void remplirText(Medicament unMedicament) 	
     {  // méthode qui permet de remplir les zones de texte à partir des valeurs passées en paramètres
-        JTcode.setText(unMedecin.getCodeMed());        
-        JTnom.setText(unMedecin.getNom());
-        JTprenom.setText(unMedecin.getPrenom());
-        JTadresse.setText(unMedecin.getAdresse());    
-        JTcp.setText(unMedecin.getLaLocalite().getCodePostal());
-        JTville.setText(unMedecin.getLaLocalite().getVille());
-        JTtelephone.setText(unMedecin.getTelephone());
-        JTpotentiel.setText(unMedecin.getPotentiel());
-        JTspecialite.setText(unMedecin.getSpecialite());
+        JTcode.setText(unMedicament.getDepotLegal());        
+        JTnom.setText(unMedicament.getNomCommercial());
+        JTcomposition.setText(unMedicament.getComposition());
+        JTadresse.setText(unMedicament.getEffets());    
+        JTcp.setText(unMedicament.getContreIndication());
+        JTville.setText(unMedicament.getPrixEchantillon());
+        JTcodeFamille.setText(unMedicament.getCodeFamille().getCodeFamille());
      }
      
       public void viderText() 	

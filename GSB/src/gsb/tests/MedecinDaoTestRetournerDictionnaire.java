@@ -9,7 +9,10 @@ package gsb.tests;
 import gsb.modele.Medecin;
 import gsb.modele.dao.MedecinDao;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> branch 'master' of https://github.com/TaranP/GSB_Java
 import java.util.HashMap;
 
 /**

@@ -8,6 +8,7 @@ package gsb.vue;
 
 import gsb.modele.Medecin;
 import gsb.modele.dao.MedecinDao;
+<<<<<<< HEAD
 import gsb.service.MedecinService;
 
 import java.awt.Component;
@@ -30,6 +31,23 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.event.ListSelectionListener;
+=======
+
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.swing.JButton;
+import javax.swing.JInternalFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
+>>>>>>> branch 'master' of https://github.com/TaranP/GSB_Java
 
 /**
  * @author Isabelle 23 févr. 2015 TODO Pour changer le modèle de ce commentaire

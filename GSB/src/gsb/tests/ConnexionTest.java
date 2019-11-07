@@ -8,10 +8,14 @@ package gsb.tests;
 
 import gsb.modele.dao.ConnexionMySql;
 
+<<<<<<< HEAD
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+=======
+import java.sql.ResultSet;
+>>>>>>> branch 'master' of https://github.com/TaranP/GSB_Java
 
 /**
  * @author Isabelle
